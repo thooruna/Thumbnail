@@ -1,0 +1,6 @@
+C:\Users\Wilfred\GitHub\Thumbnail\bin\Debug\Thumbnail.exe
+C:\Users\Wilfred\GitHub\Thumbnail\bin\Debug\Thumbnail.pdb
+C:\Users\Wilfred\GitHub\Thumbnail\obj\Debug\Thumbnail.vbprojResolveAssemblyReference.cache
+C:\Users\Wilfred\GitHub\Thumbnail\obj\Debug\Thumbnail.exe
+C:\Users\Wilfred\GitHub\Thumbnail\obj\Debug\Thumbnail.pdb
+C:\Users\Wilfred\GitHub\Thumbnail\bin\Debug\Thumbnail.exe.config
