@@ -1,6 +1,6 @@
 ﻿'
 ' Created by SharpDevelop.
-' User: Wilfred
+' User: Wilfred Stapper
 ' Date: 10/22/2016
 ' Time: 12:05 PM
 ' 
@@ -15,7 +15,7 @@ Module Program
 		Dim arguments As String() = System.Environment.GetCommandLineArgs()
 		
 		'Dim strFullFileName As String = System.IO.Path.GetTempPath + "_thumb.png"
-	    Dim strFullFileName As String = "C:\temp\_thumb.png"
+		Dim strFullFileName As String = "C:\temp\_thumb.png"
 	    If System.IO.File.Exists(strFullFileName) Then
 	    	System.IO.File.Delete(strFullFileName)
 	    End If
@@ -28,7 +28,7 @@ Module Program
 			
 			If strArgument = "/?" Then
 				Console.WriteLine("No help defined")
-			ElseIf System.IO.File.Exists(strArgument) Then			
+			ElseIf System.IO.File.Exists(strArgument) Then
 				
 				Dim objApp As New ApprenticeServerComponent
 	    		Dim objDoc As ApprenticeServerDocument = objApp.Open(strArgument)
