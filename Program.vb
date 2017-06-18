@@ -31,16 +31,17 @@ Module Program
 			ElseIf System.IO.File.Exists(strArgument) Then
 				
 				Dim objApp As New ApprenticeServerComponent
-	    		Dim objDoc As ApprenticeServerDocument = objApp.Open(strArgument)
-	    		Dim objThumb As stdole.IPictureDisp = objDoc.PropertySets.Item("Inventor Summary Information").Item("Thumbnail").value
-	    				
-	    		Dim objImage As System.Drawing.Image = New Bitmap(Compatibility.VB6.IPictureDispToImage(objThumb), New System.Drawing.Size(267,267))
-	    		objImage.Save(strFullFileName)
-	    			    		
-        		objDoc.Close
-        		
-        		Console.WriteLine("Thumbnail created for: " + strArgument)
-        		Console.WriteLine("Thumbnail saved as: " + strFullFileName)
+				Dim objDoc As ApprenticeServerDocument = objApp.Open(strArgument)
+				Dim objThumb As stdole.IPictureDisp = objDoc.PropertySets.Item("Inventor Summary Information").Item("Thumbnail").value
+							
+				Dim objImage As System.Drawing.Image = New Bitmap(Compatibility.VB6.IPictureDispToImage(objThumb), New System.Drawing.Size(267,267))
+				objImage.Save(strFullFileName)
+				
+				objDoc.Close
+				
+				
+				Console.WriteLine("Thumbnail created for: " + strArgument)
+				Console.WriteLine("Thumbnail saved as: " + strFullFileName)
 			Else
 				Console.WriteLine("The system cannot find the file specified: " + strArgument)
 			End If
